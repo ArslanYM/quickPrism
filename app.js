@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 //mongodb 
-mongoose.connect('mongodb://localhost:27017/shop_inventory', {
+mongoose.connect('mongodb+srv://asthatsimple02:malik663@cluster0.ohafpjj.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
