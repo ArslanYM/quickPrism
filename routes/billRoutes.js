@@ -3,7 +3,7 @@ const router = express.Router();
 const Bill = require('../models/Bill');
 const ItemsInBill = require('../models/ItemsInBill');
 
-// Create a new bill
+
 router.post('/', async (req, res) => {
   const { items, totalAmount } = req.body;
   const newBill = new Bill({ totalAmount });
@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Get all bills
+
 router.get('/', async (req, res) => {
   try {
     const bills = await Bill.find();
@@ -37,7 +37,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Get details of a specific bill
+
 router.get('/:id', async (req, res) => {
   try {
     const bill = await Bill.findById(req.params.id);
