@@ -1,0 +1,23 @@
+TEST DATA
+
+/// purchase items : 
+{
+  "items": [
+    {
+      "itemId": "663f38182cc5a39d1f9b8783", // ID of Product 1
+      "quantity": 1
+    },
+  {
+      "itemId": "663f38182cc5a39d1f9b8783", // ID of Product 2
+      "quantity": 1
+    }
+  ]
+}
+
+
+/// create item
+ {
+   "name": "Product 4",
+   "quantity": 15
+ }
+
